@@ -74,13 +74,13 @@ public class Point {
     }
 }
 
-class Circle () {
+class Circle {
     public double r; // радиус
     public Point c; // центр
 
     // возвращает строку с описанием окружности
     public String toString () {
-        return "Окружность с центром в точке " + с + " и радиусом " + r;
+        return "Окружность с центром в точке " + c + " и радиусом " + r;
     }
     // выводит на экран описание окружности
     public void print () {
@@ -100,4 +100,44 @@ class Circle () {
         c.set(p.x, p.y);
         r = m;
     }
+
+    // конструктор по умолчанию, создает окружность с указанными пользователем параметрами
+    Circle () {
+        System.out.println("Задайте центр окружности");
+        c = new Point();
+        boolean err;
+        do {
+            err = false;
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Задайте радиус");
+            if (scan.hasNextDouble()) {
+                r = scan.nextDouble();
+                if (r <= 0) {
+                    System.out.println("Радиус окружности должен быть положительным");
+                    err = true;
+                }
+            } else {
+                System.out.println("Вы ввели не число, попробуйте снова");
+                err = true;
+            }
+        } while (err);
+    }
+
+    Circle (double a, double b, double m) {
+        c.set(a, b);
+        r = m;
+    }
+    // метод вычесляющий длину окружности
+    public double length(Point p) {
+        return 2 * Math.PI * r;
+    }
+    // проверяем на совпадение две окружности
+    public boolean equalsCircle(Circle o) {
+        if(this.r == o.r && c.equalsPoint(o.c)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
+
