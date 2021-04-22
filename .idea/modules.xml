@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/2d_arrlist/2d_arrlist.iml" filepath="$PROJECT_DIR$/2d_arrlist/2d_arrlist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/array_list/array_list.iml" filepath="$PROJECT_DIR$/array_list/array_list.iml" />
       <module fileurl="file://$PROJECT_DIR$/arrays/arrays.iml" filepath="$PROJECT_DIR$/arrays/arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/constructor/constructor.iml" filepath="$PROJECT_DIR$/constructor/constructor.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/javafan.iml" filepath="$PROJECT_DIR$/.idea/javafan.iml" />
       <module fileurl="file://$PROJECT_DIR$/loops/loops.iml" filepath="$PROJECT_DIR$/loops/loops.iml" />
       <module fileurl="file://$PROJECT_DIR$/methods/methods.iml" filepath="$PROJECT_DIR$/methods/methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/string_methods/string_methods.iml" filepath="$PROJECT_DIR$/string_methods/string_methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wrapper_class/wrapper_class.iml" filepath="$PROJECT_DIR$/wrapper_class/wrapper_class.iml" />
     </modules>
   </component>
 </project>
